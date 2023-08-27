@@ -1,9 +1,9 @@
 .header {
   background: #151515 url("../images/intro-bg-tmdb.jpg") no-repeat center center;
-  background-size: 100% auto;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-attachment: fixed;
 }
 
