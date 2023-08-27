@@ -174,3 +174,14 @@
     padding-bottom: 20px;
   }
 }
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .header,
+  .skillsBg,
+  .skillsBg2,
+  .projectsBg,
+  .services {
+    background-attachment: scroll;
+  }
+}
