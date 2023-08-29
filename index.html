@@ -32,7 +32,8 @@
     />
 
     <!------------------------------------------------------ L I N K ---->
-    <!------------------------------------------------------ I C O N ---->
+    <!-- Include your ICONS here -->
+    <!-- Include your FONTS here -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -41,10 +42,12 @@
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Include your CSS files here -->
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/lightbox.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!----------------------------------------------------- T I T L E ---->
     <title>Portfolio | TJ Bah</title>
   </head>
   <body>
@@ -571,14 +574,17 @@
             </div>
 
             <!-- Form -->
-            <form name="contact" netlify>
+            <form class="needs-validation" name="contact" novalidate netlify>
               <div class="mb-5">
                 <input
                   type="text"
                   class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                   name="name"
                   placeholder="Name"
+                  required
                 />
+                <div class="valid-feedback">Looks Good</div>
+                <div class="invalid-feedback">Please provide your name</div>
               </div>
               <div class="mb-5">
                 <input
@@ -586,14 +592,20 @@
                   class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                   name="email"
                   placeholder="Email"
+                  required
                 />
+                <div class="valid-feedback">Looks Good</div>
+                <div class="invalid-feedback">Please provide a valid email</div>
               </div>
               <div class="mb-5">
                 <textarea
                   class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
                   name="message"
                   placeholder="Message"
+                  required
                 ></textarea>
+                <div class="valid-feedback">Looks Good</div>
+                <div class="invalid-feedback">Please provide a message</div>
               </div>
               <div class="mb-5 d-grid">
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -624,6 +636,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/typingEffect.js"></script>
+    <script src="js/needs-validation.js"></script>
   </body>
 </html>
