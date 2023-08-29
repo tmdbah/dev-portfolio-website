@@ -170,6 +170,9 @@
     border-bottom: var(--bs-dark) solid 1px;
     padding-bottom: 20px;
   }
+  .skillsBg2 .row h1 {
+    font-size: x-large !important;
+  }
 }
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
