@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .header .header-text-container {
@@ -40,7 +40,7 @@
 }
 
 .skillsBg {
-  background: url("../images/skills-bg.jpg") no-repeat center center;
+  background: url("../images/skills-bg.webp") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -86,7 +86,7 @@
 }
 
 .projectsBg {
-  background: url("../images/projects-bg.jpg") no-repeat center center;
+  background: url("../images/projects-bg.png") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -109,7 +109,7 @@
 }
 
 .services {
-  background: url("../images/kd-bg.jpg") no-repeat center center;
+  background: url("../images/kd-bg.png") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -124,7 +124,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .services .container {
