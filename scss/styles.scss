@@ -1,32 +1,35 @@
-.header {
-  background: #151515 url("../images/intro-bg-tmdb.jpg") no-repeat center center;
+@import "variables";
+
+.bkg-header {
+  background: $img-bkg-color url("../images/intro-bg-tmdb.jpg") no-repeat center
+    center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
-}
 
-.header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
 
-.header .header-text-container {
-  z-index: 10;
-}
+  .header-text-container {
+    z-index: 10;
+  }
 
-.header .roles {
-  font-family: "lora-regular", serif;
-}
+  .roles {
+    font-family: $font-stack;
+  }
 
-.header .social {
-  bottom: 50px;
+  .social {
+    bottom: 50px;
+  }
 }
 
 .about-img {
@@ -39,105 +42,107 @@
   opacity: 0.8;
 }
 
-.skillsBg {
+.bkg-skills {
   background: url("../images/skills-bg.webp") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .bkg-skills-container {
+    z-index: 10;
+  }
 }
 
-.skillsBg::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-}
-
-.skillsBg .skillsBg-container {
-  z-index: 10;
-}
-
-.skillsBg2 {
+.bkg-skills2 {
   background: url("../images/skills-bg2.jpg") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .bkg-skills2-container {
+    z-index: 10;
+  }
 }
 
-.skillsBg2::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.skillsBg2 .skillsBg2-container {
-  z-index: 10;
-}
-
-.projectsBg {
+.bkg-projects {
   background: url("../images/projects-bg.png") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .bkg-projects-container {
+    z-index: 10;
+  }
 }
 
-.projectsBg::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-}
-
-.projectsBg .container {
-  z-index: 10;
-}
-
-.services {
+.bkg-services {
   background: url("../images/kd-bg.png") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
-}
 
-.services::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
 
-.services .container {
-  z-index: 10;
+  .bkg-services-container {
+    z-index: 10;
+  }
 }
 
 @media (max-width: 767px) {
-  .header .social i {
-    font-size: 30px;
-  }
+  .header {
+    .social i {
+      font-size: 30px;
+    }
 
-  .header .roles {
-    font-size: 18px !important;
+    .roles {
+      font-size: 18px !important;
+    }
   }
 
   .about-content {
@@ -158,11 +163,11 @@
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .header,
-  .skillsBg,
-  .skillsBg2,
-  .projectsBg,
-  .services {
+  .bkg-header,
+  .bkg-skills,
+  .bkg-skills2,
+  .bkg-projects,
+  .bkg-services {
     background-attachment: scroll;
   }
 }

@@ -1,13 +1,12 @@
-.header {
-  background: #151515 url("../images/intro-bg-tmdb.jpg") no-repeat center center;
+.bkg-header {
+  background: black url("../images/intro-bg-tmdb.jpg") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
 }
-
-.header::after {
+.bkg-header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -16,16 +15,13 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-
-.header .header-text-container {
+.bkg-header .header-text-container {
   z-index: 10;
 }
-
-.header .roles {
+.bkg-header .roles {
   font-family: "lora-regular", serif;
 }
-
-.header .social {
+.bkg-header .social {
   bottom: 50px;
 }
 
@@ -39,7 +35,7 @@
   opacity: 0.8;
 }
 
-.skillsBg {
+.bkg-skills {
   background: url("../images/skills-bg.webp") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -47,8 +43,7 @@
   -o-background-size: cover;
   background-attachment: fixed;
 }
-
-.skillsBg::after {
+.bkg-skills::after {
   content: "";
   position: absolute;
   top: 0;
@@ -57,12 +52,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0);
 }
-
-.skillsBg .skillsBg-container {
+.bkg-skills .bkg-skills-container {
   z-index: 10;
 }
 
-.skillsBg2 {
+.bkg-skills2 {
   background: url("../images/skills-bg2.jpg") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -70,8 +64,7 @@
   -o-background-size: cover;
   background-attachment: fixed;
 }
-
-.skillsBg2::after {
+.bkg-skills2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -80,12 +73,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-
-.skillsBg2 .skillsBg2-container {
+.bkg-skills2 .bkg-skills2-container {
   z-index: 10;
 }
 
-.projectsBg {
+.bkg-projects {
   background: url("../images/projects-bg.png") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -93,8 +85,7 @@
   -o-background-size: cover;
   background-attachment: fixed;
 }
-
-.projectsBg::after {
+.bkg-projects::after {
   content: "";
   position: absolute;
   top: 0;
@@ -103,12 +94,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0);
 }
-
-.projectsBg .container {
+.bkg-projects .bkg-projects-container {
   z-index: 10;
 }
 
-.services {
+.bkg-services {
   background: url("../images/kd-bg.png") no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
@@ -116,8 +106,7 @@
   -o-background-size: cover;
   background-attachment: fixed;
 }
-
-.services::after {
+.bkg-services::after {
   content: "";
   position: absolute;
   top: 0;
@@ -126,8 +115,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-
-.services .container {
+.bkg-services .bkg-services-container {
   z-index: 10;
 }
 
@@ -153,11 +141,11 @@
 }
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .header,
-  .skillsBg,
-  .skillsBg2,
-  .projectsBg,
-  .services {
+  .bkg-header,
+  .bkg-skills,
+  .bkg-skills2,
+  .bkg-projects,
+  .bkg-services {
     background-attachment: scroll;
   }
 }
